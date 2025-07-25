@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nosso Amor</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <audio id="musicaFundo" src="assets/musica.mp3" loop></audio>
+
+  <div id="tela-senha">
+    <img src="assets/fotos/1.jpeg" alt="Foto do casal" class="foto-senha" />
+    <h2>Digite a nossa senha 💖</h2>
+    <input type="password" id="senha" placeholder="Senha" />
+    <button onclick="verificarSenha()">Entrar</button>
+    <div id="mensagem-senha"></div>
+  </div>
+
+  <div id="conteudo" style="display: none">
+    <button id="botao-musica" onclick="toggleMusica()">🎵 Ligar Música</button>
+
+    <section id="menu">
+      <h1>Menu do Amor 💘</h1>
+      <div class="botoes-menu">
+        <button onclick="navegar('memorias')">Nossas Memórias 📸</button>
+        <button onclick="navegar('calendario')">Nosso Calendário 🗓️</button>
+        <button onclick="navegar('jogo')">Jogo da Memória 🧠</button>
+        <button onclick="navegar('notas')">Notas de Amor 💌</button>
+        <button onclick="navegar('mensagem')">Mensagem Final 🎁</button>
+      </div>
+    </section>
+
+    <section id="memorias" class="secao">
+      <h2>Nossas Memórias 📸</h2>
+      <img id="fotoSlide" src="assets/fotos/1.jpeg" alt="Foto do casal" />
+      <div class="botoes-fotos">
+        <button onclick="fotoAnterior()">⬅️</button>
+        <button onclick="proximaFoto()">➡️</button>
+      </div>
+      <button class="voltar" onclick="voltarMenu()">⬅️ Voltar ao Menu</button>
+    </section>
+
+    <section id="calendario" class="secao">
+      <h2>Nosso Calendário 🗓️</h2>
+      <p>Estamos juntos há:</p>
+      <p id="tempo"></p>
+      <p class="mensagem-romantica">Desde o nosso primeiro olhar, o relógio do meu coração só bate por você.    Te amo infinitamente! 💞</p>
+      <img src="assets/fotos/2.jpeg" class="foto-redonda menor" alt="Foto romântica" />
+      <button class="voltar" onclick="voltarMenu()">⬅️ Voltar ao Menu</button>
+    </section>
+
+    <section id="jogo" class="secao">
+      <h2>Jogo da Memória 🧠</h2>
+      <div id="tabuleiro"></div>
+      <button class="voltar" onclick="voltarMenu()">⬅️ Voltar ao Menu</button>
+    </section>
+
+    <section id="notas" class="secao">
+      <h2>Notas de Amor 💌</h2>
+      <p>Minha linda, cada instante ao seu lado é um verso eterno que o universo escreveu só para nós dois. ❤️</p>
+      <p>Meu bem, cada sorriso seu é como um poema escrito diretamente no meu coração. 💘♾️💘</p>
+      <p>Tudo o que eu preciso está no brilho dos seus olhos. 😍</p>
+      <p>Assista esse vídeo:</p>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/o-jWu3sdCok" frameborder="0" allowfullscreen></iframe>
+      <button class="voltar" onclick="voltarMenu()">⬅️ Voltar ao Menu</button>
+    </section>
+
+
+<section id="mensagem" class="secao">
+  <h2>🎁 Clique para ver sua mensagem especial</h2>
+  <button class="botao-mensagem" onclick="mostrarMensagem()">Ver Mensagem</button>
+
+  <div id="mensagemFinal" style="display: none; margin-top: 20px;">
+    <h2>Feliz Aniversário, meu amor! 🎉</h2>
+    <p>Hoje o mundo fica mais bonito, porque é o dia em que você nasceu. Eu fico tentando encontrar palavras que sejam grandes o suficiente para traduzir o que eu sinto por você… mas nenhuma chega perto.</p>
+    <p>Você é o meu sonho bom que se tornou realidade, a paz que acalma o meu coração e o motivo dos meus sorrisos mais sinceros. Estar ao seu lado faz cada dia valer a pena, e celebrar a sua vida é um presente que eu recebo com alegria todos os anos.</p>
+    <p>Quero que saiba que, hoje e sempre, eu torço para que você seja a pessoa mais feliz do mundo. Que seus sonhos se realizem, que a vida te abrace com todo amor que você merece e que eu possa estar sempre ao seu lado, dividindo cada conquista e te dando apoio em cada desafio.</p>
+    <p>Feliz aniversário, minha linda! Obrigado por ser exatamente quem você é e por me permitir fazer parte da sua história. Que venham muitos e muitos anos juntos, com amor, risadas e memórias lindas como as que já construímos.</p>
+    <p>Eu te amarei para todo o sempre, enquanto eu viver te fazer a mulher mais amada e feliz do mundo será minha missão! 💖</p>
+    <p>Você é a razão do meu sorriso, a luz dos meus dias e o amor da minha vida. Que este novo ano traga ainda mais felicidade, saúde e amor para você.</p>
+    <p>Obrigada por ser a mulher incrível que você é, por me fazer sentir amado e especial todos os dias. Eu sou eternamente grato por ter você ao meu lado.</p>
+    <p>Que possamos continuar construindo nossa história juntos, com muito amor, carinho e cumplicidade. Que cada dia seja uma nova oportunidade de amar e ser amado, de rir e chorar juntos, de crescer e aprender lado a lado.</p>
+    <p>Você é a minha melhor amiga, minha confidente, minha parceira de vida. Eu te amo mais do que palavras podem expressar, e sou tão feliz por poder compartilhar minha vida com você.</p>
+    <p>Que este aniversário seja apenas o começo de mais um ano incrível, cheio de aventuras, conquistas e momentos inesquecíveis. Que possamos celebrar muitos outros aniversários juntos, sempre com muito amor e alegria.</p>
+    <p>Você é a razão do meu sorriso, a luz dos meus dias e o amor da minha vida. Que este novo ano traga ainda mais felicidade, saúde e amor para você.</p> 
+    <p>Nosso amor não se mede em dias, mas em batimentos do coração.</p>
+    <p>Com todo o meu amor, Caio 💘</p>
+  </div>
+
+  <button class="voltar" onclick="voltarMenu()">⬅️ Voltar ao Menu</button>
+</section>
+
+<footer>Com amor, de Caio 💘</footer>
+  </div>
+</body>
+</html>
