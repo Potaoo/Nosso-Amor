@@ -11,8 +11,8 @@
   <audio id="musicaFundo" src="assets/musica.mp3" loop></audio>
 
   <div id="tela-senha">
-    <img src="assets/fotos/1.jpeg" alt="Foto do casal" class="foto-senha" />
-    <h2>Digite a nossa senha 💖</h2>
+    <img src="assets/fotos/6.jpeg" alt="Foto do casal" class="foto-senha" />
+    <h2>Aqui só entra o amor da minha vida… 💖</h2>
     <input type="password" id="senha" placeholder="Senha" />
     <button onclick="verificarSenha()">Entrar</button>
     <div id="mensagem-senha"></div>
@@ -22,7 +22,7 @@
     <button id="botao-musica" onclick="toggleMusica()">🎵 Ligar Música</button>
 
     <section id="menu">
-      <h1>Menu do Amor 💘</h1>
+      <h1>Nosso Mundo 💘</h1>
       <div class="botoes-menu">
         <button onclick="navegar('memorias')">Nossas Memórias 📸</button>
         <button onclick="navegar('calendario')">Nosso Calendário 🗓️</button>
@@ -33,32 +33,32 @@
     </section>
 
     <section id="memorias" class="secao">
-      <h2>Nossas Memórias 📸</h2>
-      <img id="fotoSlide" src="assets/fotos/1.jpeg" alt="Foto do casal" />
-      <div class="botoes-fotos">
-        <button onclick="fotoAnterior()">⬅️</button>
-        <button onclick="proximaFoto()">➡️</button>
-      </div>
+      <h2>Nossas Memórias </h2>
+      <div class="container-foto-navegacao">
+    <button onclick="fotoAnterior()">⬅️</button>
+    <img id="fotoSlide" src="assets/fotos/1.jpeg" alt="Foto do casal" />
+    <button onclick="proximaFoto()">➡️</button>
+  </div>
       <button class="voltar" onclick="voltarMenu()">⬅️ Voltar ao Menu</button>
     </section>
 
     <section id="calendario" class="secao">
-      <h2>Nosso Calendário 🗓️</h2>
+      <h2>Nosso Calendário </h2>
       <p>Estamos juntos há:</p>
       <p id="tempo"></p>
-      <p class="mensagem-romantica">Desde o nosso primeiro olhar, o relógio do meu coração só bate por você.    Te amo infinitamente! 💞</p>
-      <img src="assets/fotos/2.jpeg" class="foto-redonda menor" alt="Foto romântica" />
+      <p class="mensagem-romantica">Eu te amo desde o dia 15/02/2025 que foi quando eu te conheci e desde então, te amo para todo o sempre e Desde o nosso primeiro olhar, o relógio do meu coração só bate por você.    Te amo infinitamente! 💞</p>
+      <img src="assets/fotos/12.jpeg" class="foto-redonda menor" alt="Foto romântica" />
       <button class="voltar" onclick="voltarMenu()">⬅️ Voltar ao Menu</button>
     </section>
 
     <section id="jogo" class="secao">
-      <h2>Jogo da Memória 🧠</h2>
+      <h2>Jogo da Memória </h2>
       <div id="tabuleiro"></div>
       <button class="voltar" onclick="voltarMenu()">⬅️ Voltar ao Menu</button>
     </section>
 
     <section id="notas" class="secao">
-      <h2>Notas de Amor 💌</h2>
+      <h2>Notas de Amor </h2>
       <p>Minha linda, cada instante ao seu lado é um verso eterno que o universo escreveu só para nós dois. ❤️</p>
       <p>Meu bem, cada sorriso seu é como um poema escrito diretamente no meu coração. 💘♾️💘</p>
       <p>Tudo o que eu preciso está no brilho dos seus olhos. 😍</p>
@@ -69,7 +69,7 @@
 
 
 <section id="mensagem" class="secao">
-  <h2>🎁 Clique para ver sua mensagem especial</h2>
+  <h2> Clique para ver sua mensagem especial</h2>
   <button class="botao-mensagem" onclick="mostrarMensagem()">Ver Mensagem</button>
 
   <div id="mensagemFinal" style="display: none; margin-top: 20px;">
